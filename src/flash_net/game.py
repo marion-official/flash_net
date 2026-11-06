@@ -15,6 +15,11 @@ DEFAULT_CARDS = Path(__file__).with_name("acronyms.yaml")
 class Card:
     name: str
     answers: list[str]  # the first one is shown when the player gets it wrong
+    hint: str | None = None  # shown in the prompt to tell similar meanings apart
+
+    @property
+    def label(self):
+        return f"{self.name} ({self.hint})" if self.hint else self.name
 
 
 def _normalize(text):
@@ -39,7 +44,10 @@ def _parse_card(entry):
         or not all(isinstance(a, str) and _normalize(a) for a in answers)
     ):
         raise ValueError(f"'answers' must be a non-empty list of text: {entry!r}")
-    return Card(name, answers)
+    hint = entry.get("hint")
+    if hint is not None and (not isinstance(hint, str) or not hint.strip()):
+        raise ValueError(f"'hint' must be text: {entry!r}")
+    return Card(name, answers, hint)
 
 
 def load_cards(path=DEFAULT_CARDS):
@@ -59,7 +67,7 @@ def play(cards, ask=input, show=print, rng=random, shuffle=True):
     score = answered = 0
     for card in order:
         try:
-            guess = ask(f"{card.name}: ")
+            guess = ask(f"{card.label}: ")
         except (EOFError, KeyboardInterrupt):
             show("")
             break

@@ -1,132 +1,538 @@
-# Network+ acronyms. The first answer is shown after a wrong guess; any listed
-# answer is accepted. Quote names YAML could misread, such as "NO" or "ON".
+# CompTIA's official Network+ acronym list. The first answer is shown after a
+# wrong guess; any listed answer is accepted. Later answers are common variants.
+# Quote names YAML could misread, such as "NO" or "ON".
+# An optional hint is shown in the prompt to tell meanings apart. Keep it from
+# giving away the answer.
 
-- name: "Wi-Fi"
+- name: "A"
+  hint: "DNS record"
   answers:
-    - "Wireless Fidelity"
+    - "Address"
+- name: "ACL"
+  answers:
+    - "Access Control List"
+- name: "AH"
+  hint: "IPSec"
+  answers:
+    - "Authentication Header"
+- name: "AP"
+  answers:
+    - "Access Point"
+- name: "API"
+  answers:
+    - "Application Programming Interface"
+- name: "APIPA"
+  answers:
+    - "Automatic Private Internet Protocol Addressing"
+    - "Automatic Private IP Addressing"
 - name: "ARP"
   answers:
     - "Address Resolution Protocol"
+- name: "AUP"
+  answers:
+    - "Acceptable Use Policy"
 - name: "BGP"
   answers:
     - "Border Gateway Protocol"
+- name: "BNC"
+  hint: "coax connector"
+  answers:
+    - "Bayonet Neill–Concelman"
+- name: "BSSID"
+  answers:
+    - "Basic Service Set Identifier"
+- name: "BYOD"
+  answers:
+    - "Bring Your Own Device"
+- name: "CAM"
+  hint: "switch table"
+  answers:
+    - "Content-addressable Memory"
+- name: "CDN"
+  answers:
+    - "Content Delivery Network"
+- name: "CDP"
+  answers:
+    - "Cisco Discovery Protocol"
+- name: "CIA"
+  hint: "security"
+  answers:
+    - "Confidentiality, Integrity, and Availability"
 - name: "CIDR"
   answers:
-    - "Classless Inter-Domain Routing"
+    - "Classless Inter-domain Routing"
+- name: "CLI"
+  answers:
+    - "Command-line Interface"
+- name: "CNAME"
+  hint: "DNS record"
+  answers:
+    - "Canonical Name"
+- name: "CPU"
+  answers:
+    - "Central Processing Unit"
+- name: "CRC"
+  answers:
+    - "Cyclic Redundancy Check"
+- name: "DAC"
+  hint: "cabling"
+  answers:
+    - "Direct Attach Copper"
+    - "Direct Attached Copper"
+- name: "DAS"
+  answers:
+    - "Direct-attached Storage"
+- name: "DCI"
+  answers:
+    - "Data Center Interconnect"
+- name: "DDoS"
+  answers:
+    - "Distributed Denial-of-service"
 - name: "DHCP"
   answers:
     - "Dynamic Host Configuration Protocol"
+- name: "DLP"
+  answers:
+    - "Data Loss Prevention"
 - name: "DNS"
   answers:
     - "Domain Name System"
     - "Domain Name Service"
+- name: "DNSSEC"
+  answers:
+    - "Domain Name System Security Extensions"
+    - "DNS Security Extensions"
+- name: "DoH"
+  answers:
+    - "DNS over Hypertext Transfer Protocol Secure"
+    - "Domain Name System over Hypertext Transfer Protocol Secure"
+    - "DNS over HTTPS"
+- name: "DoS"
+  answers:
+    - "Denial-of-service"
+- name: "DoT"
+  answers:
+    - "DNS over Transport Layer Security"
+    - "Domain Name System over Transport Layer Security"
+    - "DNS over TLS"
+- name: "DR"
+  hint: "business continuity"
+  answers:
+    - "Disaster Recovery"
+- name: "EAPoL"
+  answers:
+    - "Extensible Authentication Protocol over LAN"
+    - "Extensible Authentication Protocol over Local Area Network"
 - name: "EIGRP"
   answers:
     - "Enhanced Interior Gateway Routing Protocol"
+- name: "EOL"
+  answers:
+    - "End-of-life"
+- name: "EOS"
+  answers:
+    - "End-of-support"
+- name: "ESP"
+  hint: "IPSec"
+  answers:
+    - "Encapsulating Security Payload"
+- name: "ESSID"
+  answers:
+    - "Extended Service Set Identifier"
+- name: "EULA"
+  answers:
+    - "End User License Agreement"
+- name: "FC"
+  answers:
+    - "Fibre Channel"
+    - "Fiber Channel"
+- name: "FHRP"
+  answers:
+    - "First Hop Redundancy Protocol"
 - name: "FTP"
   answers:
     - "File Transfer Protocol"
+- name: "GDPR"
+  answers:
+    - "General Data Protection Regulation"
 - name: "GRE"
   answers:
     - "Generic Routing Encapsulation"
+- name: "GUI"
+  answers:
+    - "Graphical User Interface"
 - name: "HTTP"
   answers:
     - "Hypertext Transfer Protocol"
 - name: "HTTPS"
   answers:
     - "Hypertext Transfer Protocol Secure"
+- name: "IaaS"
+  answers:
+    - "Infrastructure as a Service"
+- name: "IaC"
+  answers:
+    - "Infrastructure as Code"
+- name: "IAM"
+  answers:
+    - "Identity and Access Management"
 - name: "ICMP"
   answers:
     - "Internet Control Message Protocol"
-- name: "IMAP"
+- name: "ICS"
   answers:
-    - "Internet Message Access Protocol"
-- name: "IPsec"
+    - "Industrial Control System"
+- name: "IDF"
+  answers:
+    - "Intermediate Distribution Frame"
+- name: "IDS"
+  answers:
+    - "Intrusion Detection System"
+- name: "IoT"
+  answers:
+    - "Internet of Things"
+- name: "IIoT"
+  answers:
+    - "Industrial Internet of Things"
+- name: "IKE"
+  answers:
+    - "Internet Key Exchange"
+- name: "IP"
+  answers:
+    - "Internet Protocol"
+- name: "IPAM"
+  answers:
+    - "Internet Protocol Address Management"
+    - "IP Address Management"
+- name: "IPS"
+  answers:
+    - "Intrusion Prevention System"
+- name: "IPSec"
   answers:
     - "Internet Protocol Security"
+- name: "IS-IS"
+  answers:
+    - "Intermediate System to Intermediate System"
 - name: "LACP"
   answers:
     - "Link Aggregation Control Protocol"
 - name: "LAN"
   answers:
     - "Local Area Network"
+- name: "LC"
+  hint: "fiber"
+  answers:
+    - "Local Connector"
+    - "Lucent Connector"
 - name: "LDAP"
   answers:
     - "Lightweight Directory Access Protocol"
+- name: "LDAPS"
+  answers:
+    - "Lightweight Directory Access Protocol over SSL"
+    - "Lightweight Directory Access Protocol Secure"
+- name: "LLDP"
+  answers:
+    - "Link Layer Discovery Protocol"
 - name: "MAC"
+  hint: "Layer 2"
   answers:
     - "Media Access Control"
-- name: "MPLS"
+- name: "MDF"
   answers:
-    - "Multiprotocol Label Switching"
+    - "Main Distribution Frame"
+- name: "MDIX"
+  answers:
+    - "Medium Dependent Interface Crossover"
+    - "Media Dependent Interface Crossover"
+- name: "MFA"
+  answers:
+    - "Multifactor Authentication"
+- name: "MIB"
+  hint: "SNMP"
+  answers:
+    - "Management Information Base"
+- name: "MPO"
+  hint: "connector"
+  answers:
+    - "Multifiber Push On"
+- name: "MTBF"
+  answers:
+    - "Mean Time Between Failure"
+    - "Mean Time Between Failures"
+- name: "MTTR"
+  answers:
+    - "Mean Time To Repair"
 - name: "MTU"
   answers:
     - "Maximum Transmission Unit"
+- name: "MX"
+  hint: "DNS record"
+  answers:
+    - "Mail Exchange"
+- name: "NAC"
+  answers:
+    - "Network Access Control"
+- name: "NAS"
+  answers:
+    - "Network-attached Storage"
 - name: "NAT"
   answers:
     - "Network Address Translation"
+- name: "NFV"
+  answers:
+    - "Network Functions Virtualization"
+    - "Network Function Virtualization"
+- name: "NIC"
+  answers:
+    - "Network Interface Cards"
+    - "Network Interface Card"
+- name: "NS"
+  hint: "DNS record"
+  answers:
+    - "Name Server"
 - name: "NTP"
   answers:
     - "Network Time Protocol"
+- name: "NTS"
+  answers:
+    - "Network Time Security"
+- name: "OS"
+  answers:
+    - "Operating System"
 - name: "OSPF"
   answers:
     - "Open Shortest Path First"
+- name: "OSI"
+  answers:
+    - "Open Systems Interconnection"
+- name: "OT"
+  answers:
+    - "Operational Technology"
+- name: "PaaS"
+  answers:
+    - "Platform as a Service"
+- name: "PAT"
+  answers:
+    - "Port Address Translation"
+- name: "PCI DSS"
+  answers:
+    - "Payment Card Industry Data Security Standards"
+    - "Payment Card Industry Data Security Standard"
+- name: "PDU"
+  hint: "rack equipment"
+  answers:
+    - "Power Distribution Unit"
+- name: "PKI"
+  answers:
+    - "Public Key Infrastructure"
 - name: "PoE"
   answers:
     - "Power over Ethernet"
+- name: "PSK"
+  hint: "authentication"
+  answers:
+    - "Pre-shared Key"
+- name: "PTP"
+  hint: "clock sync"
+  answers:
+    - "Precision Time Protocol"
+- name: "PTR"
+  hint: "DNS record"
+  answers:
+    - "Pointer"
 - name: "QoS"
   answers:
     - "Quality of Service"
+- name: "QSFP"
+  answers:
+    - "Quad Small Form-factor Pluggable"
 - name: "RADIUS"
   answers:
-    - "Remote Authentication Dial-In User Service"
+    - "Remote Authentication Dial-in User Service"
 - name: "RDP"
   answers:
     - "Remote Desktop Protocol"
+- name: "RFID"
+  answers:
+    - "Radio Frequency Identifier"
+    - "Radio Frequency Identification"
+- name: "RIP"
+  answers:
+    - "Routing Information Protocol"
+- name: "RJ"
+  hint: "copper connector"
+  answers:
+    - "Registered Jack"
+- name: "RPO"
+  answers:
+    - "Recovery Point Objective"
+- name: "RSTP"
+  answers:
+    - "Rapid Spanning Tree Protocol"
+- name: "RTO"
+  answers:
+    - "Recovery Time Objective"
+- name: "RX"
+  answers:
+    - "Receiver"
+    - "Receive"
+- name: "SaaS"
+  answers:
+    - "Software as a Service"
+- name: "SAML"
+  answers:
+    - "Security Assertion Markup Language"
+- name: "SAN"
+  hint: "data center"
+  answers:
+    - "Storage Area Network"
+- name: "SASE"
+  answers:
+    - "Secure Access Service Edge"
+- name: "SC"
+  hint: "fiber"
+  answers:
+    - "Subscriber Connector"
+    - "Standard Connector"
+    - "Square Connector"
+- name: "SCADA"
+  answers:
+    - "Supervisory Control and Data Acquisition"
 - name: "SDN"
   answers:
-    - "Software-Defined Networking"
+    - "Software-defined Network"
+    - "Software-defined Networking"
+- name: "SD-WAN"
+  answers:
+    - "Software-defined Wide Area Network"
+- name: "SFP"
+  answers:
+    - "Small Form-factor Pluggable"
 - name: "SFTP"
   answers:
-    - "SSH File Transfer Protocol"
     - "Secure File Transfer Protocol"
+    - "SSH File Transfer Protocol"
+- name: "SIP"
+  answers:
+    - "Session Initiation Protocol"
 - name: "SIEM"
   answers:
     - "Security Information and Event Management"
+- name: "SLA"
+  answers:
+    - "Service-level Agreement"
+- name: "SLAAC"
+  answers:
+    - "Stateless Address Autoconfiguration"
+- name: "SMB"
+  hint: "file sharing"
+  answers:
+    - "Server Message Block"
 - name: "SMTP"
   answers:
     - "Simple Mail Transfer Protocol"
+- name: "SMTPS"
+  answers:
+    - "Simple Mail Transfer Protocol Secure"
 - name: "SNMP"
   answers:
     - "Simple Network Management Protocol"
+- name: "SOA"
+  hint: "DNS record"
+  answers:
+    - "Start of Authority"
+- name: "SQL"
+  answers:
+    - "Structured Query Language"
+- name: "SSE"
+  answers:
+    - "Security Service Edge"
 - name: "SSH"
   answers:
     - "Secure Shell"
 - name: "SSID"
   answers:
     - "Service Set Identifier"
+- name: "SSL"
+  answers:
+    - "Secure Socket Layer"
+    - "Secure Sockets Layer"
+- name: "SSO"
+  answers:
+    - "Single Sign-on"
+- name: "ST"
+  hint: "fiber connector"
+  answers:
+    - "Straight Tip"
 - name: "STP"
+  hint: "cabling"
+  answers:
+    - "Shielded Twisted Pair"
+- name: "STP"
+  hint: "switching"
   answers:
     - "Spanning Tree Protocol"
-    - "Shielded Twisted Pair"
+- name: "SVI"
+  answers:
+    - "Switch Virtual Interface"
 - name: "TACACS+"
   answers:
-    - "Terminal Access Controller Access-Control System Plus"
+    - "Terminal Access Controller Access Control System Plus"
 - name: "TCP"
   answers:
     - "Transmission Control Protocol"
 - name: "TFTP"
   answers:
     - "Trivial File Transfer Protocol"
-- name: "TLS"
+- name: "TTL"
   answers:
-    - "Transport Layer Security"
+    - "Time to Live"
+- name: "TX"
+  answers:
+    - "Transmitter"
+    - "Transmit"
+- name: "TXT"
+  hint: "DNS record"
+  answers:
+    - "Text"
 - name: "UDP"
   answers:
     - "User Datagram Protocol"
+- name: "UPS"
+  answers:
+    - "Uninterruptible Power Supply"
+- name: "URL"
+  answers:
+    - "Uniform Resource Locator"
+- name: "USB"
+  answers:
+    - "Universal Serial Bus"
+- name: "UTM"
+  answers:
+    - "Unified Threat Management"
+- name: "UTP"
+  answers:
+    - "Unshielded Twisted Pair"
+- name: "VIP"
+  hint: "high availability"
+  answers:
+    - "Virtual IP"
+    - "Virtual Internet Protocol"
 - name: "VLAN"
   answers:
     - "Virtual Local Area Network"
+- name: "VLSM"
+  answers:
+    - "Variable Length Subnet Mask"
+    - "Variable Length Subnet Masking"
+- name: "VoIP"
+  answers:
+    - "Voice over IP"
+    - "Voice over Internet Protocol"
+- name: "VPC"
+  answers:
+    - "Virtual Private Cloud"
 - name: "VPN"
   answers:
     - "Virtual Private Network"
@@ -136,3 +542,28 @@
 - name: "WPA"
   answers:
     - "Wi-Fi Protected Access"
+- name: "WPS"
+  answers:
+    - "Wi-Fi Protected Setup"
+- name: "VXLAN"
+  answers:
+    - "Virtual Extensible LAN"
+    - "Virtual Extensible Local Area Network"
+- name: "ZTA"
+  answers:
+    - "Zero Trust Architecture"
+
+# Not on the official list, kept as useful extras.
+
+- name: "Wi-Fi"
+  answers:
+    - "Wireless Fidelity"
+- name: "IMAP"
+  answers:
+    - "Internet Message Access Protocol"
+- name: "MPLS"
+  answers:
+    - "Multiprotocol Label Switching"
+- name: "TLS"
+  answers:
+    - "Transport Layer Security"

@@ -29,7 +29,8 @@ uv run flash-net --file my_acronyms.yaml
 
 ## Adding acronyms
 
-The default list is in `src/flash_net/acronyms.yaml`:
+The default list is in `src/flash_net/acronyms.yaml`. It follows CompTIA's official
+acronym list, with a few useful extras at the end:
 
 ```yaml
 - name: "DNS"
@@ -39,6 +40,19 @@ The default list is in `src/flash_net/acronyms.yaml`:
 ```
 
 Any listed answer is accepted, and the first one is shown after a wrong guess.
+
+Add a `hint` when an acronym is ambiguous or has several meanings. It appears in the
+prompt, and each meaning gets its own card:
+
+```yaml
+- name: "STP"
+  hint: "cabling"
+  answers:
+    - "Shielded Twisted Pair"
+```
+
+This shows up as `STP (cabling): `.
+
 Keep names quoted, because YAML reads an unquoted `NO` or `ON` as a boolean.
 
 ## Tests
