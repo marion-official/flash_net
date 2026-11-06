@@ -1,0 +1,138 @@
+# Network+ acronyms. The first answer is shown after a wrong guess; any listed
+# answer is accepted. Quote names YAML could misread, such as "NO" or "ON".
+
+- name: "Wi-Fi"
+  answers:
+    - "Wireless Fidelity"
+- name: "ARP"
+  answers:
+    - "Address Resolution Protocol"
+- name: "BGP"
+  answers:
+    - "Border Gateway Protocol"
+- name: "CIDR"
+  answers:
+    - "Classless Inter-Domain Routing"
+- name: "DHCP"
+  answers:
+    - "Dynamic Host Configuration Protocol"
+- name: "DNS"
+  answers:
+    - "Domain Name System"
+    - "Domain Name Service"
+- name: "EIGRP"
+  answers:
+    - "Enhanced Interior Gateway Routing Protocol"
+- name: "FTP"
+  answers:
+    - "File Transfer Protocol"
+- name: "GRE"
+  answers:
+    - "Generic Routing Encapsulation"
+- name: "HTTP"
+  answers:
+    - "Hypertext Transfer Protocol"
+- name: "HTTPS"
+  answers:
+    - "Hypertext Transfer Protocol Secure"
+- name: "ICMP"
+  answers:
+    - "Internet Control Message Protocol"
+- name: "IMAP"
+  answers:
+    - "Internet Message Access Protocol"
+- name: "IPsec"
+  answers:
+    - "Internet Protocol Security"
+- name: "LACP"
+  answers:
+    - "Link Aggregation Control Protocol"
+- name: "LAN"
+  answers:
+    - "Local Area Network"
+- name: "LDAP"
+  answers:
+    - "Lightweight Directory Access Protocol"
+- name: "MAC"
+  answers:
+    - "Media Access Control"
+- name: "MPLS"
+  answers:
+    - "Multiprotocol Label Switching"
+- name: "MTU"
+  answers:
+    - "Maximum Transmission Unit"
+- name: "NAT"
+  answers:
+    - "Network Address Translation"
+- name: "NTP"
+  answers:
+    - "Network Time Protocol"
+- name: "OSPF"
+  answers:
+    - "Open Shortest Path First"
+- name: "PoE"
+  answers:
+    - "Power over Ethernet"
+- name: "QoS"
+  answers:
+    - "Quality of Service"
+- name: "RADIUS"
+  answers:
+    - "Remote Authentication Dial-In User Service"
+- name: "RDP"
+  answers:
+    - "Remote Desktop Protocol"
+- name: "SDN"
+  answers:
+    - "Software-Defined Networking"
+- name: "SFTP"
+  answers:
+    - "SSH File Transfer Protocol"
+    - "Secure File Transfer Protocol"
+- name: "SIEM"
+  answers:
+    - "Security Information and Event Management"
+- name: "SMTP"
+  answers:
+    - "Simple Mail Transfer Protocol"
+- name: "SNMP"
+  answers:
+    - "Simple Network Management Protocol"
+- name: "SSH"
+  answers:
+    - "Secure Shell"
+- name: "SSID"
+  answers:
+    - "Service Set Identifier"
+- name: "STP"
+  answers:
+    - "Spanning Tree Protocol"
+    - "Shielded Twisted Pair"
+- name: "TACACS+"
+  answers:
+    - "Terminal Access Controller Access-Control System Plus"
+- name: "TCP"
+  answers:
+    - "Transmission Control Protocol"
+- name: "TFTP"
+  answers:
+    - "Trivial File Transfer Protocol"
+- name: "TLS"
+  answers:
+    - "Transport Layer Security"
+- name: "UDP"
+  answers:
+    - "User Datagram Protocol"
+- name: "VLAN"
+  answers:
+    - "Virtual Local Area Network"
+- name: "VPN"
+  answers:
+    - "Virtual Private Network"
+- name: "WAN"
+  answers:
+    - "Wide Area Network"
+- name: "WPA"
+  answers:
+    - "Wi-Fi Protected Access"
